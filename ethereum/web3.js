@@ -1,7 +1,7 @@
 import Web3 from "web3";
  
 let web3;
-const NETWORK_PROVIDER = '';
+const NETWORK_PROVIDER = 'https://rinkeby.infura.io/v3/627ad18b8bf944afafee788379cb5a36';
 if (typeof window !== "undefined" && typeof window.ethereum !== "undefined") {
   // We are in the browser and metamask is running.
   window.ethereum.request({ method: "eth_requestAccounts" });

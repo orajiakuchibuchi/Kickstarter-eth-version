@@ -59,7 +59,7 @@ node deploy.js
 copy the contract address displayed on the terminal/cmd/bash
 update the CONTRACT_ADDRESS variable in ethereum/factory.js with the copied contract address
 
-run the *npn run dev* command to start the server.
+run the *npm run dev* command to start the server.
 
 you will be prompted to allow connection from the local server
 

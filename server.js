@@ -8,9 +8,10 @@ const app = next({
 const routes = require('./routes');
 const handler = routes.getRequestHandler(app);
 
-app.prepare().then(()=>{
-    createServer(handler).listen(3000, (err) => {
+app.prepare().then(() => {
+    const port = env.process.PORT || 3000
+    createServer(handler).listen(port, (err) => {
         if(err) throw err;
-        console.log('Ready on localhost:3000');
+        console.log('Ready on localhost:'+port);
     })
 })
